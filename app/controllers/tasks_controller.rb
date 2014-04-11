@@ -37,6 +37,7 @@ class TasksController < ApplicationController
       params[:filter] :
       :all
     @filter = params[:filter]
+    set_active_tasks
     render "update"
   end
 
