@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Todo</title>
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+    <div id="main">
+      <div class="title">
+        <h1 title="TODO">TODO</h1>
+      </div>
+      <%= yield %>
+    </div>
+  </body>
+</html>

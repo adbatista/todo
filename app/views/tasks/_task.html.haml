@@ -1,0 +1,9 @@
+.row
+  %div{id: "task_#{task.id}"}
+    .check
+      = link_to status_update_path(task.status, task, filter: @filter), method: :patch, remote: true do
+        = image_for_task task
+    .task
+      = task
+    = link_to task, method: :delete, remote: true, data: { confirm: 'Are you sure?' } do
+      = image_tag "close.png"

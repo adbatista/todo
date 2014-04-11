@@ -1,0 +1,4 @@
+%ul.nav
+  - filters.each do |filter|
+    %li{class: filter == 'all' ? 'active' : '' }
+      = link_to filter.capitalize , status_filter_path(filter), remote: true

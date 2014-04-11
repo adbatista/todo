@@ -1,0 +1,21 @@
+#form
+  = link_to "+ Task", "#", id: "add_task"
+  = form_for(@task, remote: true) do |f|
+    = f.text_field :task, placeholder: "Add Task"
+    = link_to "#", class: "close" do
+      %strong &times;
+
+.panel
+  .bar
+  .panel-header
+    .scroll
+      = image_tag 'scroll-down.png'
+    .header
+      What needs to be done?
+  #tasks.panel-body
+    = render @tasks
+  .panel-footer
+    .bar
+    .container
+      .info= render "active_tasks", active_tasks: @active_tasks
+      = render "filters", filters: %w{all active completed}

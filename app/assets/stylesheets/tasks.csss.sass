@@ -1,0 +1,97 @@
+a
+  text-decoration: none
+
+.nav
+  display: inline-block
+  margin: 5px
+  padding-left: 10px
+  li
+    display: inline-block
+    margin: auto 5px
+    font-size: 15px
+    &.active
+      font-weight: bold
+
+.panel
+  border-top: 1px solid #BABABA
+  width: 365px
+  display: inline-block
+  text-align: left
+
+  .panel-header, .panel-body, .bar, .panel-footer > .container
+    border-left: 1px solid #BABABA
+    border-right: 1px solid #BABABA
+
+  & .row > div, & .panel-header
+    padding: 0 15px
+    div
+      padding: 3px 0
+
+  & > .bar
+    padding: 0
+    height: 13px
+    display: block
+    background: linear-gradient(#9b8981, #847670)
+    border-bottom: 1px solid #695e59
+
+  .panel-header
+    font-size: 23px
+    color: #ABABAB
+    font-style: italic
+    background: #F7F7F7
+    border-bottom: 1px dashed #BABABA
+
+  .panel-body
+    background: #FDFDFD
+    border-bottom: 1px solid #BABABA
+
+  .panel-footer
+    padding: 0 3px
+    background: #EEE
+    margin: 0 0px
+    .bar
+      border: 1px solid #BABABA
+      height: 3px
+    .container
+      margin: auto 7px
+      border-bottom: 1px solid #BABABA
+      padding-left: 10px
+      &, a
+        color: #83756f
+
+.header, .info
+  display: inline-block
+
+.check, .scroll
+  width: 35px
+  display: inline-block
+  border-right: 1px dotted red
+
+.task
+  display: inline-block
+  width: 260px
+
+.header, .task, .check, .scroll
+  min-height: 30px
+  vertical-align: bottom
+
+.row
+  border-bottom: 1px dotted #BABABA
+
+.task, .header
+  border-left: 1px dotted red
+  padding-left: 6px !important
+
+.header
+  margin-left: -2px
+
+#form
+  margin-bottom: 10px
+  input
+    width: 340px
+    height: 25px
+    font-size: 16px
+    color: #888
+
+#left_tasks
+  display: inline-block
